@@ -1,0 +1,1 @@
+if(process.argv.length>2){let a=process.argv.slice(2),n=a.length,s=a[0],l=s.length,r="",t="",k=1;for(let i=0;i<l;i++){for(let j=i+1;j<l+1;j++){t=s.slice(i,j);for(k=1;k<n;k++){if(!a[k].includes(t)){break;}}if(k==n&&r.length<t.length){r=t}}}console.log(r)}else{console.log("no strings")}
