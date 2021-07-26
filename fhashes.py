@@ -10,7 +10,8 @@ def get_hash(path):
 def main():
 	path = abspath(getcwd())
 	for file in listdir(path):
-		print(file + " " + get_hash(join(path, file)))
+		if not i.startswith("."):
+			print(file + " " + get_hash(join(path, file)))
 
 if __name__=="__main__":
 	main()
