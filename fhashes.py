@@ -4,8 +4,8 @@ import hashlib
 
 def get_hash(path):
 	with open(path, encoding='utf-8') as file:
-		line = file.read()
-	return hashlib.sha3_256(str.encode(line)).hexdigest()
+		content = file.read()
+	return hashlib.sha3_256(str.encode(content)).hexdigest()
 
 def main():
 	path = abspath(getcwd())
